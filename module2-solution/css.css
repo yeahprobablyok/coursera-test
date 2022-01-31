@@ -5,60 +5,74 @@
 	box-sizing: border-box;
 }
 h1{
-	margin-bottm: 15px;
+	margin-bottom: 40px;
 	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
 }
-section {
-  border: 5px solid black;
-  width: 95%;
-  height:  auto;
-  position: relative;
-  padding: auto;
-  margin: auto;
-  font-family: Helvetica;
-  color: black;
-  background: gray
+div > h2 {
+	position: absolute;
+	top: -16px;
+	right: 0px;
+	border: 2px solid black;
+	border-right: none;
+	border-top: none;
+	padding: 1px;
+	width: 30%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
 }
-
 /*** All things Chicken ***/
-#chickentitle{
-	border: 3px solid black;
+#chicken {
+	/*border: 3px solid black;
 	height: auto;
 	width: 30%;
 	text-align: center;
 	margin-left: auto;
-	margin-top: auto;
+	margin-top: auto;*/
 	color: black;
 	background-color: #FFC0CB;
 	}
-#chickencontainer {
-	position: relative;
-	padding-left: 12px;
-	padding-right: auto;
-	}
-
-/***All things Beef***/
-#beeftitle {
-	border: 3px solid black;
-	height: auto;
+/*** All things Beef ***/
+#beef {
+	/*border: 3px solid black;
+	height:  auto;
 	width: 30%;
 	text-align: center;
 	margin-left: auto;
-	margin-top: auto;
+	margin-top: auto;*/
 	color: white;
 	background-color: #FF0000;
 }
-#beefcontainer {
-	position: relative;
-	padding-left: 12px;
-	padding-right: auto;
+/*** All things Sushi ***/
+#sushi {
+	/*border: 3px solid black;
+	height:  auto;
+	width: 30%;
+	text-align: center;
+	margin-left: auto;
+	margin-top: auto;*/
+	color: black;
+	background-color: #FFFFE0;
 }
 
 /* Responsive Framework */
 .row {
 	width: 100%;
+	margin: auto;
 }
-
+.section {
+	position: relative;
+	top: 0;
+	background-color: #999999;
+	margin: 15px;
+	padding: 35px 25px 25px 25px;
+	border: 3px solid #000;
+	text-align: justify;
+	font-size: 16px;
+	font-family: 'allianz-neo',"Arial", sans-serif;
+}	
 /*** Desktop ***/
 @media (min-width: 992px) {
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -81,6 +95,7 @@ section {
 	}
 	.col-lg-6 {
 		width: 50%;
+		float: left;
 	}
 	.col-lg-7 {
 		width:  58.33%;
